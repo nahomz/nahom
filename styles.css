@@ -1,0 +1,240 @@
+/***********************************
+====================================
+Landing Page Styles
+(C) Joseph Aboagye
+====================================
+***********************************/
+
+/*--------------------------------
+Global Styles
+*/
+html {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.Intro_End {
+  margin: 0 auto;
+  padding: 2px 0;
+}
+h1 {
+  line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+  border-radius: 10px 10px;
+  margin: 10px;
+}
+header,
+footer {
+  text-align: center;
+}
+:focus{
+  outline: none;
+}
+a {
+  color: #ffffff;
+}
+a:hover, 
+a:focus {
+  text-decoration: none;
+  color: #fd0202;
+}
+
+/* Introduction
+------------------------------------*/
+header {
+  background-image: url(images/clark-van.jpg);
+  background-size: contain;
+  border-bottom: 1px solid silver;
+  color: rgb(166, 179, 252);
+}
+header a {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 4px;
+}
+.Expose {
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(136, 166, 248);
+}
+
+/* All About Project
+------------------------------------ */
+#History {
+  margin: 10px 50px;
+  text-align: center;
+}
+#History img {
+  border: 1px solid #0c0606;
+  box-shadow: 8px 8px 3px rgba(110, 131, 247, 0.336),
+    2px 2px 3px rgba(2, 248, 228, 0.64);
+}
+.CntrlKeys {
+  background: repeating-linear-gradient(
+    to bottom,
+    #013e77,
+    rgba(25, 182, 4, 0.3),
+    #1a015f
+  );
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-top: 0%;
+  border: 1px solid #0c0606;
+  box-shadow: 4px 4px 2px black;
+}
+.CntrlKeys ul {
+  list-style-type: none;
+}
+.Play {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 15px;
+  padding: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    #b7d7f5,
+    rgb(148, 151, 147),
+    #f2f3ef
+  );
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 0.5px black;
+  text-decoration: none;
+}
+.Play:hover {
+  color: #420142;
+}
+.Game {
+  background-image: radial-gradient(ellipse at top, 
+  #0c09c4, transparent),radial-gradient(ellipse at bottom,
+  #4d4c1b, transparent), radial-gradient(ellipse at top, 
+  #c00808, transparent),radial-gradient(ellipse at bottom,
+  #4d1b46, transparent);
+}
+.Developers {
+  background-image: url(images/mitchell-luoc.jpg);
+  background-size: cover;
+  background-position: left;
+}
+.Developers,
+.Game {
+  margin: 0 0;
+  padding: 2px 0;
+}
+#more {
+  display: none;
+}
+.For_ALX {
+  color: rgb(3, 220, 248);
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: justify;
+}
+figure img {
+  border-radius: 50%;
+}
+.btn a {
+  background: #2f3061;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.GitHub {
+  display: inline;
+  color: #318bf3;
+}
+
+/* Ending
+-------------------------------------*/
+footer {
+  background: black;
+  border-top: 1px solid silver;
+}
+.Text-Content {
+  font-weight: 600;
+  font-style: italic;
+}
+.Text-Content a {
+  background: none;
+}
+.Links {
+  color: #f3f2eb;
+}
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width: 721px) {
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  #History {
+    flex-flow: row wrap;
+  }
+  .Game_Cntrls h3 {
+    text-align: center;
+  }
+  .Dev-Profile,
+  #History {
+    display: flex;
+    justify-content: center;
+  }
+  .Links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  #History {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  .Dev-Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Links {
+    display: inline-block;
+    text-align: justify;
+  }
+}
